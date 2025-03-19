@@ -1,5 +1,3 @@
-// Exercise: create a function for binary search.
-
 /**
  * Search an item in a sorted array.
  * @constructor
@@ -25,7 +23,3 @@ export default function binarySearch<T>(input: Array<T>, target: T) {
 
   return null;
 }
-
-const list = [1, 3, 5, 7, 9];
-console.log(binarySearch(list, 3));
-console.log(binarySearch(list, -1));
