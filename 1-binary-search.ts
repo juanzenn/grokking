@@ -1,8 +1,8 @@
 /**
  * Search an item in a sorted array.
  * @constructor
- * @param {T[]} input - The sorted array.
- * @param {T} target - The item you are looking for.
+ * @param input - The sorted array.
+ * @param target - The item you are looking for.
  */
 export default function binarySearch<T>(input: Array<T>, target: T) {
   let low = 0;
