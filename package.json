@@ -1,0 +1,10 @@
+{
+  "name": "zen-grokking",
+  "version": "1.0.0",
+  "description": "A group of algorithms and data structures following the book Grokking Algorithms (2nd Edition) by Aditya Bhargava.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
+}
