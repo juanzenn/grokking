@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import binarySearch from "../1-binary-search";
+import binarySearch from "../src/1-binary-search";
 
 const TEST_ARRAY = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 

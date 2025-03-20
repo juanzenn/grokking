@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import selectionSort from "../2-selection-sort";
+import selectionSort from "../src/2-selection-sort";
 
 const NORMAL_INPUT = [1, 3, 5, 7, 2];
 const INPUT_WITH_EMPTY = [4, 1, 2, null];
