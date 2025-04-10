@@ -1,13 +1,28 @@
+// Graph definition:
 const graph = {
-  start: { a: 6, b: 2 },
-  a: { fin: 1 },
-  b: { a: 3, fin: 5 },
+  start: { A: 10, B: 3 },
+  A: { C: 3 },
+  B: { A: 1, C: 8, D: 2 },
+  C: { fin: 2, D: 7 },
+  D: { fin: 5 },
   fin: {},
 };
-const costs = { a: 6, b: 2, fin: Infinity };
+
+// Initial costs:
+const costs = {
+  A: 10,
+  B: 3,
+  C: Infinity,
+  D: Infinity,
+  fin: Infinity,
+};
+
+// Initial parents:
 const parents = {
-  a: "start",
-  b: "start",
+  A: "start",
+  B: "start",
+  C: undefined,
+  D: undefined,
   fin: undefined,
 };
 const processed = [];
@@ -49,5 +64,5 @@ export default function dijktra() {
 }
 
 dijktra();
+console.log(costs["fin"]);
 console.table(parents);
-console.table(costs);
